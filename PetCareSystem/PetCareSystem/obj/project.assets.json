@@ -4385,19 +4385,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\FPTSHOP\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive - Hanoi University of Science and Technology\\Flavour\\ITSS\\Back\\ITSS-Group19\\PetCareSystem\\PetCareSystem\\PetCareSystem.csproj",
+      "projectUniqueName": "D:\\EXE201\\Paw-Mingle\\PetCareSystem\\PetCareSystem\\PetCareSystem.csproj",
       "projectName": "PetCareSystem",
-      "projectPath": "D:\\OneDrive - Hanoi University of Science and Technology\\Flavour\\ITSS\\Back\\ITSS-Group19\\PetCareSystem\\PetCareSystem\\PetCareSystem.csproj",
-      "packagesPath": "C:\\Users\\FPTSHOP\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive - Hanoi University of Science and Technology\\Flavour\\ITSS\\Back\\ITSS-Group19\\PetCareSystem\\PetCareSystem\\obj\\",
+      "projectPath": "D:\\EXE201\\Paw-Mingle\\PetCareSystem\\PetCareSystem\\PetCareSystem.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "D:\\EXE201\\Paw-Mingle\\PetCareSystem\\PetCareSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\FPTSHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

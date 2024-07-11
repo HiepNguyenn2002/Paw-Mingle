@@ -9,7 +9,7 @@ import {
     Input,
     Textarea
 } from "@material-tailwind/react";
-import { FaEdit, FaTrash } from "react-icons/fa";
+import { FaEdit } from "react-icons/fa";
 import axios from "axios";
 import { UserContext } from "../../../App";
 import { toast } from "react-toastify";
@@ -18,14 +18,18 @@ export default function EditPetDialog(props) {
     const [open, setOpen] = useState(false);
 
     const [service_data, setServiceData] = useState({
+        // eslint-disable-next-line react/prop-types
         "id": props.id,
+        // eslint-disable-next-line react/prop-types
         "name": props.name,
+        // eslint-disable-next-line react/prop-types
         "price": props.price,
+        // eslint-disable-next-line react/prop-types
         "description": props.description
     });
 
     const api_url = 'https://petcaresystem20240514113535.azurewebsites.net';
-    const { user_data, setUserData } = useContext(UserContext);
+    const { user_data } = useContext(UserContext);
 
     const handleOpen = () => setOpen((cur) => !cur);
 
@@ -43,6 +47,7 @@ export default function EditPetDialog(props) {
             .then((res) => {
                 console.log(res);
                 if (res.data.isSucceed === true) {
+                    // eslint-disable-next-line react/prop-types
                     props.getGroomingServices();
                     toast.success("Sửa thành công", { autoClose: 2000 });
                 }

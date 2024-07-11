@@ -4,6 +4,7 @@ import { UserContext } from "../../App";
 import { toast } from "react-toastify";
 import bookingService from "../../services/bookingService";
 
+// eslint-disable-next-line react/prop-types
 export default function EditBookingDialog({ open, handleOpen, recordData, getRooms }) {
   const [roomData, setRoomData] = useState(recordData);
   const { user_data } = useContext(UserContext);

@@ -35,6 +35,7 @@ function CustomerRegister() {
             return
         }
         try {
+            // eslint-disable-next-line no-unused-vars
             const {confirm_password, ...credentials} = user_info
             const response = await authService.signUp(credentials)
             updateUserInfo(init_info);

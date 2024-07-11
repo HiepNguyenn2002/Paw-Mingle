@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 
 export default function AdminAuth () {
-    const { user_data, setUserData } = useContext(UserContext);
+    const { user_data } = useContext(UserContext);
 
     return (
         <div>

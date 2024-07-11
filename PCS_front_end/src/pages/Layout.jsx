@@ -1,4 +1,4 @@
-import {Outlet, Navigate, useLocation} from "react-router-dom"
+import {Outlet} from "react-router-dom"
 import NavbarDefault from "./NavbarDefault";
 import {UserContext} from "../App";
 import {useContext, useEffect} from "react";

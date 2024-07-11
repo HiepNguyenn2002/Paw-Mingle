@@ -3,7 +3,7 @@ import { UserContext } from '../App';
 import { useContext } from 'react';
 
 function Navbar () {
-    const { token, setToken } = useContext(UserContext);
+    const { setToken } = useContext(UserContext);
 
     const onSignOut = () => {
         sessionStorage.removeItem("token");

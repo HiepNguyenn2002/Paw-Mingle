@@ -1,21 +1,19 @@
+/* eslint-disable react/prop-types */
 import {
     Card,
     CardHeader,
     CardBody,
     CardFooter,
     Typography,
-    Button,
 } from "@material-tailwind/react";
 import BookServiceDialog from "./BookServiceDialog";
 import EditServiceDialog from "./EditServiceDialog";
 import DeleteServiceButton from "./DeleteServiceButton";
-import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../../../App";
 import utils from "../../../utils/utils";
 
 export default function ServiceCard(props) {
-    const navigate = useNavigate();
     const { user_data } = useContext(UserContext);
     return (
         <Card className="mt-6 w-80">

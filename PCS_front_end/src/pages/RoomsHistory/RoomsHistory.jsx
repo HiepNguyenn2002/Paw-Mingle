@@ -1,7 +1,7 @@
 import { Card, Typography, Button } from "@material-tailwind/react";
 import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../../App";
-import { FaEdit, FaTrash, FaPlus, FaEye } from "react-icons/fa";
+import { FaTrash, FaEye } from "react-icons/fa";
 import EditBookingDialog from "./EditBookingDialog";
 import { toast } from "react-toastify";
 import bookingService from "../../services/bookingService";

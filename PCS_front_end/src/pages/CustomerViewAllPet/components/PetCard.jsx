@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import {
     Card,
     CardHeader,
@@ -15,13 +16,14 @@ import { useNavigate } from "react-router-dom";
 
    
 export default function PetCard(props) {
-  const { user_data, setUserData } = useContext(UserContext);
+  useContext(UserContext);
   const navigate = useNavigate();
   return (
     <Card className="mt-6 w-80">
       <CardHeader color="blue-gray" className="relative h-48">
         <img
           className="object-cover w-full h-full"
+          // eslint-disable-next-line react/prop-types
           src={props.imageUrl}
           alt="card-image"
         />

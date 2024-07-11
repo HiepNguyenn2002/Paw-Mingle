@@ -4,6 +4,7 @@ import axios from "axios";
 import { UserContext } from "../../App";
 import { toast } from "react-toastify";
 
+// eslint-disable-next-line react/prop-types
 export default function EditMedicalRecordDialog({ open, handleOpen, recordData, getPetMedicalRecords }) {
   const [medicalRecordData, setMedicalRecordData] = useState(recordData);
   const { user_data } = useContext(UserContext);

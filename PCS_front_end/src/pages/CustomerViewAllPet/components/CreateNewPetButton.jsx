@@ -18,7 +18,7 @@ import crudPetService from "../../../services/crudPetService";
 
 export default function CreateNewPetButton(props) {
     const [open, setOpen] = useState(false);
-    const { user_data, setUserData } = useContext(UserContext);
+    const { user_data } = useContext(UserContext);
     const [pet_data, setPetData] = useState({
         "name": "",
         "age": "",
@@ -49,6 +49,7 @@ export default function CreateNewPetButton(props) {
             )
             console.log(res);
             if (res.data.isSucceed === true) {
+                // eslint-disable-next-line react/prop-types
                 props.getPetByCurrentId();
                 toast.success("Tạo thành công", { autoClose: 2000 });
             }
@@ -100,4 +101,4 @@ export default function CreateNewPetButton(props) {
             </Dialog>
         </div>
     );
-};
+}

@@ -16,7 +16,7 @@ import { toast } from "react-toastify";
 
 export default function CreateNewPetButton(props) {
     const [open, setOpen] = useState(false);
-    const { user_data, setUserData } = useContext(UserContext);
+    const { user_data } = useContext(UserContext);
     const [service_data, setServiceData] = useState({
         "name": "",
         "price": "",
@@ -41,6 +41,7 @@ export default function CreateNewPetButton(props) {
             .then((res) => {
                 console.log(res);
                 if (res.data.isSucceed === true) {
+                    // eslint-disable-next-line react/prop-types
                     props.getGroomingServices();
                     toast.success("Tạo thành công", { autoClose: 2000 });
                 }
@@ -83,4 +84,4 @@ export default function CreateNewPetButton(props) {
             </Dialog>
         </div>
     );
-};
+}

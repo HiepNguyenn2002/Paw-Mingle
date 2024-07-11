@@ -7,7 +7,7 @@ import crudPetService from "../../services/crudPetService.js";
 
 export default function CustomerViewAllPet() {
     const [data, updateData] = useState([]);
-    const { user_data, setUserData } = useContext(UserContext);
+    const { user_data } = useContext(UserContext);
 
     const getPetByCurrentId = async () => {
         try {
@@ -18,7 +18,7 @@ export default function CustomerViewAllPet() {
             console.log(response)
             if (response.data.isSucceed) {
                 updateData(response.data.data);
-            };
+            }
         }
         catch (error) {
             console.log(error);

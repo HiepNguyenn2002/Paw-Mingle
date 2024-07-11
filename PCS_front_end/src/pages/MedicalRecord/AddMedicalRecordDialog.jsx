@@ -12,6 +12,7 @@ import axios from "axios";
 import { UserContext } from "../../App";
 import { toast } from "react-toastify";
 
+// eslint-disable-next-line react/prop-types
 export default function AddMedicalRecordDialog({ open, handleOpen, petId, getPetMedicalRecords }) {
   const [medicalRecordData, setMedicalRecordData] = useState({
     "petId": petId,

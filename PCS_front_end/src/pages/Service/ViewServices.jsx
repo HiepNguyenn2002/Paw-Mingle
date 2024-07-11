@@ -17,7 +17,7 @@ export default function ViewServices() {
             console.log(res);
             if (res.data.isSucceed === true) {
                 updateData(res.data.data);
-            };
+            }
         })
         .catch((e) => {
             console.log(e);

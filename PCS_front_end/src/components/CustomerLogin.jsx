@@ -1,7 +1,8 @@
 import { FaUser, FaLock } from "react-icons/fa";
+// eslint-disable-next-line no-unused-vars
 import React, { useContext, useEffect, useState } from "react";
 import axios from 'axios'
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../App";
 
 // For displaying toasts

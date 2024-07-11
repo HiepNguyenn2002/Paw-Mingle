@@ -19,17 +19,25 @@ export default function EditPetDialog(props) {
   const [open, setOpen] = useState(false);
 
   const [pet_data, setPetData] = useState({
+    // eslint-disable-next-line react/prop-types
     "id": props.id,
+    // eslint-disable-next-line react/prop-types
     "name": props.name,
+    // eslint-disable-next-line react/prop-types
     "age": props.age,
+    // eslint-disable-next-line react/prop-types
     "gender": props.gender,
+    // eslint-disable-next-line react/prop-types
     "hairColor": props.hairColor,
+    // eslint-disable-next-line react/prop-types
     "species": props.species,
+    // eslint-disable-next-line react/prop-types
     "breed": props.breed,
+    // eslint-disable-next-line react/prop-types
     "imageUrl": props.imageUrl
   });
 
-  const { user_data, setUserData } = useContext(UserContext);
+  const { user_data } = useContext(UserContext);
 
   const handleOpen = () => setOpen((cur) => !cur);
 
@@ -50,6 +58,7 @@ export default function EditPetDialog(props) {
       )
       console.log(res);
       if (res.data.isSucceed) {
+        // eslint-disable-next-line react/prop-types
         props.getPetByCurrentId();
         toast.success("Sửa thành công", { autoClose: 2000 });
       }

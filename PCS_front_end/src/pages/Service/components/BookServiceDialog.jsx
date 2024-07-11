@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState } from "react";
 import {
     Button,
     Dialog,
@@ -10,7 +10,6 @@ import {
     Select,
     Option
 } from "@material-tailwind/react";
-import { FaEdit, FaTrash } from "react-icons/fa";
 import axios from "axios";
 import { UserContext } from "../../../App";
 import { toast } from "react-toastify";
@@ -20,6 +19,7 @@ export default function BookServiceDialog(props) {
     const [pets, setPets] = useState([]);
     const [booking_data, setBookingData] = useState({
         "petId": "",
+        // eslint-disable-next-line react/prop-types
         "groomingServiceId": props.id,
         "bookingDate": "",
         "notes": ""
@@ -66,6 +66,7 @@ export default function BookServiceDialog(props) {
             .then((res) => {
                 console.log(res);
                 if (res.data.isSucceed === true) {
+                    // eslint-disable-next-line react/prop-types
                     props.getGroomingServices();
                     toast.success("Đặt thành công", { autoClose: 2000 });
                 }
