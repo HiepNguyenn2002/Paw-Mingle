@@ -31,14 +31,14 @@ const HomePage = () => {
       />
       <div className={"col-span-6 col-start-7"}>
         <Typography variant="h5" color="blue-gray" className="mb-2">
-          Chào mừng đến với Pet Care System - Hệ thống quản lý thú cưng của bạn
+          Chào mừng đến với Paw Mingle - Hệ thống quản lý thú cưng của bạn
         </Typography>
         <Typography>
           <p>
-            Pet Care System là một hệ thống quản lý thú cưng đa dạng và hấp dẫn,
-            phục vụ cho các cửa hàng thú cưng, bệnh viện thú cưng và cả những cá
-            nhân yêu thú cưng. Với Pet Care System, bạn sẽ trải nghiệm nhiều
-            dịch vụ hữu ích và tiện lợi:
+            Paw Mingle là một hệ thống quản lý thú cưng đa dạng và hấp dẫn, phục
+            vụ cho các cửa hàng thú cưng, bệnh viện thú cưng và cả những cá nhân
+            yêu thú cưng. Với Paw Mingle, bạn sẽ trải nghiệm nhiều dịch vụ hữu
+            ích và tiện lợi:
           </p>
           <p className="mt-2 mb-2">
             <span className="font-bold">🦆 Quản lý Thông Tin Thú Cưng: </span>
@@ -60,9 +60,8 @@ const HomePage = () => {
           <p className="mt-2 mb-2">
             <span className="font-bold">🐦 Nhắc Nhở Tiêm Phòng: </span>
             <span>
-              Pet Care System sẽ gợi ý lịch tiêm phòng cho thú cưng của bạn.
-              Điều này giúp đảm bảo thú cưng luôn được bảo vệ khỏi các bệnh
-              truyền nhiễm.
+              Paw Mingle sẽ gợi ý lịch tiêm phòng cho thú cưng của bạn. Điều này
+              giúp đảm bảo thú cưng luôn được bảo vệ khỏi các bệnh truyền nhiễm.
             </span>
           </p>
           <p className="mt-2 mb-2">
@@ -74,9 +73,9 @@ const HomePage = () => {
           </p>
         </Typography>
         <Typography>
-          Pet Care System không chỉ là một công cụ quản lý thông tin, mà còn là
-          người bạn đồng hành đáng tin cậy trong việc chăm sóc thú cưng của bạn.
-          Hãy khám phá và trải nghiệm ngay! 🐾🐾🐾
+          Paw Mingle không chỉ là một công cụ quản lý thông tin, mà còn là người
+          bạn đồng hành đáng tin cậy trong việc chăm sóc thú cưng của bạn. Hãy
+          khám phá và trải nghiệm ngay! 🐾🐾🐾
         </Typography>
         <Button className={"mt-2"} onClick={handleButtonClick}>
           Xem pet của bạn
