@@ -19,7 +19,7 @@ function Layout() {
     return (
         <div className='flex flex-col min-h-screen overflow-hidden'>
             <NavbarDefault/>
-            <main className='flex-grow sm:max-[540px] md:max-w-[768px] lg:max-w-[1348px] mx-auto pt-6 px-4 md:px-8 overflow-hidden'>
+            <main className='flex-grow sm:max-[540px] md:max-w-[768px] lg:max-w-[1348px] mx-auto pt-6 px-4 md:px-8 mb-8 overflow-hidden'>
                 <Outlet/>
             </main>
             <BottomBar/>
